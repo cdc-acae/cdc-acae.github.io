@@ -2,6 +2,18 @@
 <html lang='en'>
 
 <head>
+  <style>
+@font-face {
+  font-family: 'CMU Sans Serif';
+  src: url('fonts/CMUSansSerif-Regular.ttf') format('truetype');
+  /* Add other font formats (e.g., woff, woff2) for better browser support */
+}
+
+/* Apply the CMU Sans Serif font to elements with the class "cmu-sans-serif" */
+.cmu-sans-serif {
+  font-family: 'CMU Sans Serif', sans-serif;
+}
+  </style>
     <base href=".">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
@@ -20,7 +32,7 @@
             <span class="title1">IEEE CDC </span><span class="title2">Workshop</span> <span class="year">2023</span>
         </div>
         <div class="bottom-right">
-         Modern Adaptive Control and Estimation  <br> Dec 12, 2023, Singapore
+         <span class="cmu-sans-serif">Modern Adaptive Control and Estimation  <br> Dec 12, 2023, Singapore</span>
         </div>
     </div>
 
@@ -41,45 +53,110 @@
         </tr>
     </table>
 
-    <h2>Motivation and Objective</h2>
-    <p>
-        As a major methodology for handling parametric uncertainties in dynamical systems, adaptive control/estimation has attracted much attention in both academia and industry over the past few decades. The classical adaptive control/estimation usually achieves only asymptotic error convergence in the absence of a condition termed persistent excitation (PE). The PE condition requires the persistent richness of system input-output signals, which is too stringent to be satisfied in practice. Even when PE exists, the rate of parameter convergence is highly dependent on the PE strength, generally resulting in a slow learning process. For these reasons, classical adaptive control/estimation usually exhibits poor transient performance and is fragile in complicated environments. Another fundamental limitation of the classical adaptive control/estimation is that it imposes appropriate structural knowledge on parametric uncertainties, which is generally assumed to come into the system dynamics in a linear or monotonic manner, such that the standard gradient descent search is applicable to the online parameter identification loop. However, this hinders the effective handling of complicated systems. The above limitations prevent most existing adaptive algorithms from widespread applications in real-world systems.
+    <h2>Overview</h2>
+    <p style="text-align:justify; text-justify:inter-ideograph;">
+As a major methodology for handling parametric uncertainties in dynamical systems, adaptive control and estimation approaches have attracted much attention in both academia and industry over the past few decades. The classical adaptive control and estimation impose appropriate structural knowledge on parametric uncertainties and achieves only asymptotic error convergence with weak robustness in the absence of a stringent condition termed persistent excitation, which prevent it from widespread applications in real-world systems. In recent years, some advanced adaptive design concepts have been proposed to overcome the above limitations, where notable ones with great potential in practice include regressor extension, online optimization, and non-Euclidean adaptation. These approaches have resulted in several successful real-world applications, but they are limited to relatively simple systems with low degrees of freedom, and in-depth considerations about application issues are rare. 
     </p>
-    <p>
-        You can use this template by cloning all the files from this
-        <a target="_blank" href="https://github.com/mikepierce/conference-website-template">GitHub repo here</a>.
-        This template was created from a website I made for 
-        <a target="_blank" href="http://math.ucr.edu/~mathconn/">MathConnections 2019</a>,
-        in case you want to see an example of this template being used in the wild.
+    
+       
+    <p style="text-align:justify; text-justify:inter-ideograph;">
+   This workshop aims to bring together researchers and practitioners from academia and industry in a forum, which will help us bridge the gap between advanced theory and its applications in real-world environments. Nine distinguished speakers in adaptive control and estimation will join the workshop, including IEEE Fellows, IFAC Fellows, ASME Fellows, Editors-in-Chief of flagship journals in control, winners of the ASME Rufus Oldenburger Medal, as well as young rising stars. Our objective is to create an inclusive environment where all participants feel welcomed and valued and where a diversity of ideas and approaches can be shared and discussed. This diversity will enrich the workshop experience and contribute to the overall success of the conference.
     </p>
-    <p>
-        This paragraph is just some filler text to give the homepage some volume:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+    <p style="text-align:justify; text-justify:inter-ideograph;">  
+   Topics to be covered include several significant perspectives on modern adaptive control, parameter estimation, online learning, and their practical applications, which are listed as follows:
     </p>
-
+ <ul>
+  <li>- Novel constructive approaches for adaptive control and estimation;</li>
+  <li>- Theory and techniques to improve stability, robustness, and converngece;</li>
+  <li>- Adaptation and nonlinear parameterizaiton and nonparameteric uncertainties;</li>
+  <li>- Online optimization and learning for control and estimation;</li>
+  <li>- Non-Euclidean adaptation and parameter estimation on manifolds;</li>
+  <li>- Applications to robotics and reaction systems.</li>
+</ul>
     <h2>Organizers</h2>
+    
     <p>
-        Yongping Pan (Sun Yat-sen, China), Bowen Yi (UTS, Australia), Sayan B. Roy (IIITD, India), Alexey Bobtsov (ITMO, Russia), Romeo Ortega (ITAM, Mexico) 
+        Yongping Pan (Sun Yat-sen University, China),
+        
+        Bowen Yi (Polytechnique Montréal, Canada), 
+        
+        Sayan B. Roy (IIIT-Delhi, India), 
+        
+        Alexey Bobtsov (ITMO University, Russia), 
+        
+        Romeo Ortega (Instituto Tecnológico Autónomo de México, Mexico) 
   
     </p>
-    <table class="sponsors">
+    <table class="banner">
         <tr>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten1.jpg" alt="First Sponsor Name">
+            <td class="banner" style="text-align: center;">
+                    <img src="assets/Yongping.jpeg" alt="Yongping Pan"  width="170" height="170"> 
+            </td>
+            <td class="banner" style="text-align: center;">
+                <a>
+                    <img src="assets/Bowen.jpg" alt="Bowen Yi" width="120" height="170"> 
                 </a>
             </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten2.jpg" alt="Second Sponsor Name" style="width: 80%">
+            <td class="banner" style="text-align: center;">
+                <a>
+                    <img src="assets/Sayan.jpeg" alt="Sayan Roy" width="160" height="170"> 
                 </a>
             </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten3.jpg" alt="Third Sponsor Name">
+            <td class="banner" style="text-align: center;">
+                <a>
+                    <img src="assets/alexey.jpeg" alt="Alexey Bobtsov" width="130" height="170"> 
+                </a>
+            </td>
+            <td class="banner" style="text-align: center;">
+                <a>
+                    <img src="assets/romeo.jpeg" alt="Romeo Ortega" width="120" height="170"> 
                 </a>
             </td>
         </tr>
+        <tr>
+            <td class="banner" width="170" style="text-align: center;">
+                  <a> Yongping Pan  </a>
+            </td>
+            <td class="banner"  width="120" style="text-align: center;">
+                <a>
+                   Bowen Yi
+                </a>
+            </td>
+            <td class="banner"  width="160" style="text-align: center;">
+                <a>
+                  Sayan B. Roy
+                </a>
+            </td>
+            <td class="banner"  width="130" style="text-align: center;">
+                <a>
+                 Alexey Bobtsov
+                </a>
+            </td>
+            <td class="banner"  width="120" style="text-align: center;">
+                <a>
+                Romeo Ortega
+                </a>
+            </td>
+        </tr>        
+        <tr>
+            <td class="banner" width="150" style="text-align: center;">
+                 Sun Yat-sen University<br>China
+            </td>
+            <td class="banner"  width="120" style="text-align: center;">
+                 Polytechnique Montréal<br>Canada
+            </td>
+            <td class="banner"  width="140" style="text-align: center;">
+                 Indraprastha Institute of Information Technology Delhi, India
+            </td>
+            <td class="banner"  width="130" style="text-align: center;">
+                ITMO University<br>Russia
+            </td>
+            <td class="banner"  width="120" style="text-align: center;">
+                Instituto Tecnológico Autónomo de México<br>Mexico
+            </td>
+        </tr>
+
+
     </table>
 
     <footer>
