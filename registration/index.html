@@ -2,6 +2,18 @@
 <html lang='en'>
 
 <head>
+  <style>
+@font-face {
+  font-family: 'CMU Sans Serif';
+  src: url('fonts/CMUSansSerif-Regular.ttf') format('truetype');
+  /* Add other font formats (e.g., woff, woff2) for better browser support */
+}
+
+/* Apply the CMU Sans Serif font to elements with the class "cmu-sans-serif" */
+.cmu-sans-serif {
+  font-family: 'CMU Sans Serif', sans-serif;
+}
+  </style>
     <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
@@ -14,50 +26,45 @@
 
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
+   <div class="banner">
+        <img src="assets/marina.jpg" alt="Conference Template Banner" width="1000" height="350">
         <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+            <span class="title1"><span class="cmu-sans-serif">IEEE CDC</span> </span><span class="title2"><span class="cmu-sans-serif">Workshop</span></span> <span class="year"><span class="cmu-sans-serif">2023</span></span>
         </div>
         <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+         <span class="cmu-sans-serif">Modern Adaptive Control and Estimation  <br> Dec 12, 2023, Singapore</span>
         </div>
     </div>
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a class="current" title="Register for the Conference" href="registration">Registration</a>
+                <a class="current" title="Conference Home Page" href=".">Home</a>
             </td>
             <td class="navigation">
                 <a title="Conference Program" href="program">Program</a> 
             </td>
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
+                <a title="Speakers" href="directions">Speakers</a>
             </td>
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a title="Register for the Conference" href="registration">Registration</a>
             </td>
         </tr>
     </table>
-
     <br>
 
+    <h2><span class="cmu-sans-serif">Registration</span></h2>
     <p>
-        Here&rsquo;s where you provide instructions how to register for your conference.
-        We used a <a href="https://www.google.com/forms/about/">Google Form</a> 
-        and embedded it into an <i>iframe</i> (it&rsquo;s commented out in the html here).
+        Click <a href="https://cdc2023.ieeecss.org/registration/">here</a> for registration.
     </p>
     <!--
     <iframe class="registration" src="EMBED LINK FOR GOOGLE FORM HERE"></iframe>
     -->
-    <p>
-        Here&rsquo;s another paragraph of filler text:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-    </p>
+
+
+    <h2><span class="cmu-sans-serif">Direction</span></h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8187531558333!2d103.85588777558533!3d1.2825553987052616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1905a913542d%3A0x81a3ad206e972c35!2sSands%20Expo%20%26%20Convention%20Centre!5e0!3m2!1sen!2sau!4v1690857165711!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <footer>
         &copy; Conference Organizers
